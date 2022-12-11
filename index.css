@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'open sans';
+
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.titulo{
+    color: #982a61;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffdde16c, #ee9ca777), url(https://mail.google.com/mail/u/0?ui=2&ik=06eb4ba2ae&attid=0.1&permmsgid=msg-a:r8147624379083280846&th=18491786dce9eb09&view=fimg&realattid=f_laocurea0&disp=thd&attbid=ANGjdJ_Pn4qeAjPfUmZSSIpqC92DG9JSoUma5ogEn0zrCFLIv4FJdxNkn7i93WeQK7G8F2jrpCgplIbn1Ur6zndKGiBojTAfp11plZchcVjy8EZT7HwCXXw1bQoiMcI&ats=2524608000000&sz=w1849-h913);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffdde1a6, #ee9ca7a2), url(https://mail.google.com/mail/u/0?ui=2&ik=06eb4ba2ae&attid=0.1&permmsgid=msg-a:r8147624379083280846&th=18491786dce9eb09&view=fimg&realattid=f_laocurea0&disp=thd&attbid=ANGjdJ_Pn4qeAjPfUmZSSIpqC92DG9JSoUma5ogEn0zrCFLIv4FJdxNkn7i93WeQK7G8F2jrpCgplIbn1Ur6zndKGiBojTAfp11plZchcVjy8EZT7HwCXXw1bQoiMcI&ats=2524608000000&sz=w1849-h913); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size:cover;
+background-attachment: fixed;
+position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30 px 50 px 0 0;
+
+
+}
+
+nav a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right:10px;
+
+}
+
+nav a:hover {
+   
+    text-decoration: underline;
+   
+
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size:50px;
+    color: #fff;
+
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffff;
+
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 150%;
+}
+
+/* Acerca de Luna */
+
+.Contenedor-Acerca-de-Luna{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.imagen-about-us{
+    width:48%;
+
+}
+
+.Contenedor-Acerca-de-Luna .contenido-textos{
+    width: 48%;
+
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+background:#982a61;
+color: #fff;
+border-radius: 50%;
+display: inline-block;
+text-align: center;
+width: 30px;
+padding: 5px;
+box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.Luna-haciendo-cosas{
+    background: #f2f2f2;
+
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 20px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(135, 41, 87, 0.5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(141, 36, 97, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+
+}
+.hover-galeria p{
+    color: #fff
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*Luna y apolo */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.cards .card{
+    background:rgba(141, 36, 97, 0.7);
+    display: flex;
+    width: 46%;
+    height: 200x;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+
+
+}
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /*si no se distorsiona*/
+    border: 3px solid #fff;
+    border-radius: 50%; /*para que sea redonda*/
+    display: block;
+}
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+.cards .card > .contenido-texto-card p{
+font-weight: 300;
+padding-top: 5px;
+}
+
+.about-contact{
+    background: #f2f2f2;
+    padding-bottom: 50px; /*para que se vea mas largo de abajo*/
+    
+}
+
+.contacto-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacto-inst{
+    width: 46%;
+    text-align: center;
+
+}
+.contacto-inst img{
+width: 47%;
+
+}
+.contacto.inst h3{
+    margin: 10px 0;
+}
+.contacto.inst p{
+    font-weight: 150;
+    text-align: justify;
+}
+/*contacto fb*/
+.contacto-fb{
+    width: 46%;
+    text-align: center;
+
+}
+.contacto-fb img{
+width: 35%;
+
+}
+.contacto.fb h3{
+    margin: 10px 0;
+}
+.contacto.fb p{
+    font-weight: 150;
+    text-align: justify;
+}
+
+/* footer padding arriba a la derecha abajo a la izquierda */ 
+footer{
+    background: #ee9ca7;
+    padding: 60px 0 30px 0;
+margin: auto;
+overflow: hidden;
+
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly; /* para que se repartan los elementos equitativamente*/
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.content.foo{
+text-align: center;
+
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 5px solid #2d051da6;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.content-foo p{
+    color: rgb(235, 223, 223);
+   
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color:#3e0d2521;
+}
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+
+    }
+    .Contenedor-Acerca-de-Luna{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .lunathing .contenido-textos{
+        width:10%;
+    }
+ .imagen-about-us{
+    width: 30%;
+    border-radius: 50%;
+ }  
+ .imagen-port{
+    width:44%;
+ }
+ .cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .cards .card{
+    width:90%;
+
+ }
+ .cards .card:first-child{
+    margin-bottom: 30px;
+ }
+ .contacto-cont{
+justify-content: center;
+flex-direction: column;
+ }
+ .contacto-inst{
+    width: 100%;
+    text-align: center;
+ }
+ .contacto-fb{
+    width: 100%;
+    text-align: center;
+ }
+}
+@media screen and (max-width:500px){
+    nav{
+        text-align:center;
+        padding: 30px 0 0 0;
+    }
+    nav > a{
+        margin-right: 5px;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+    imagen-about.us{
+        margin-bottom: 60px;
+    
+    }
+    .Contenedor-Acerca-de-Luna .contenido-textos{
+        width: 95%
+    }
+    .imagen-port{
+        width: 99%;
+    }
+    .cards .card{
+height: 450px;
+display: flex;
+flex-direction:column;
+
+    }
+.contenedor-footer{
+    flex-direction: column;
+}
+}
+.formulario {
+    width:500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px;
+    box-shadow: 0 0 20px 1px rgba(69, 14, 54, 0.3);
+    position: relative;
+
+}
+.formulario__titulo {
+    text-align: center;
+    margin-top:0;
+    color:#ee9ca7;
+
+}
+.formulario__input, .formulario__label, .formulario__submit {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+  
+}
+.formulario__input {
+    padding: 20px;
+    background: rgba(135, 41, 86, 0.142);
+    border: 1px solid rgba(111, 25, 87, 0.3);
+    margin-bottom:40px;
+    
+    }
+    .formulario__input:focus {
+outline: 1px solid rgba(0,0,0,0.3);
+    }
+    .formulario__input:focus + .formulario__label {
+margin-top: -130px;
+    }
+
+.formulario__label {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+ 
+color:rgba(135, 41, 86, 0.3);
+transition: all 0,2s;
+
+  
+
+}
+.formulario__submit{
+    background: rgba(114, 19, 70, 0.578);
+    color:#f2f2f2;
+    padding: 10 px 20 px;
+    cursor: pointer;
+    border: none;
+}
+.fijar {
+    margin-top: -135px;
+}
+.u-wrapper {
+    max-inline-size: 1000px;
+    margin: 0 auto;
+  padding: 20px;
+    background: rgba(135, 41, 86, 0.142);
+    border: 1px solid rgba(111, 25, 87, 0.3);
+    margin-bottom:60px;
+  }
+  
+  .u-wrapper {
+    max-inline-size: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  
+  .form {
+    max-inline-size: 600px;
+    margin: auto;
+  }
+  
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #831978;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 3px solid #858C94;
+  }
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+  }
+  
+  
+  .contact {
+    margin-block-end: 5em;
+  }
+  
+  
+  
+  
+  .form .tag span {
+      display: block;
+      text-align: center;
+    }
+ .JSREGISTRATE  {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("Lunafoto2.jpg");
+    background-image: linear-gradient(rgba(190, 129, 129, 0.244),white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #858c94c2;
+ }
+
+ .container-form {
+    width:90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+ }
+
+ .welcome-back{
+    display: flex;
+    align-items: center;
+    text-align: center;
+ }
+
+ .message {
+    padding: 1rem;
+ }
+ .messaje h2{
+    font-size: 1.7rem;
+    padding: 1 rem 0;
+ }
+
+ .message button {
+    padding: 1rem;
+    font-weight:400;
+    background-color: rgba(98, 32, 73, 0.404);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color:rgb(235, 223, 223);
+ }
+ .message button:hover {
+    background-color: #551535;
+ }
+
+ .formulariojs {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(180, 49, 143, 0.153);
+    text-align: center;
+ }
+ 
+ .create-acount {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+ }
+
+ .iconos{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+ }
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+transition: all .3s ease-in;
+
+}
+.border-icon:hover {
+    background-color: #551535;
+    cursor: pointer;
+}
+
+.cuenta-gratis {
+    padding: 2rem 0;
+
+}
+
+.formulariojs input {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: #ee9ca7 thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: #856368;
+
+}
+
+.formulariojs input[type="button"]{
+width: 50%;
+margin: auto;
+border: solid thin #ee9ca7;
+padding: .7rem;
+border-radius: 2rem;
+background-color: #8e6c7053;
+font-weight: 600;
+margin-top: 3rem;
+font-size: .8rem;
+cursor: pointer;
+color:#551535;
+
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
